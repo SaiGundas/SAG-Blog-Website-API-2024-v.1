@@ -92,8 +92,8 @@ class Comment(db.Model):
 # TODO: Create a User table for all your registered users.
 
 
-# with app.app_context():
-#     db.create_all()
+ with app.app_context():
+    db.create_all()
 
 gravatar = Gravatar(app,
                     size=100,
